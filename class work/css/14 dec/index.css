@@ -1,0 +1,20 @@
+.link {
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.pink_background {
+    background-color: rgb(255, 229, 229);
+}
+.start {
+    height: 200px;
+}

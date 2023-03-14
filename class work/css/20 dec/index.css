@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffe5e8 ;
+    padding: 150px 0;
+}
+
+
+/* Utility classes */
+.center {
+    margin: auto;
+    width: fit-content;
+}
+
+.btn{
+    border: none;
+    background-color: rgb(184, 171, 171);
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.position_right{
+    float: right;
+}
+
+
+
+/* Component classes */
+.double_border{
+    border: 5px double red;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.btn_container{
+    padding: 30px 20px;
+}
+
+.text, .btn_container{
+    padding: 30px 20px;
+}
+
+.parent{
+    width: 500px;
+    padding: 10px;
+}
+
+.btn_1{
+    color: aqua;
+}
+
+.btn_2{
+    color: white;
+}

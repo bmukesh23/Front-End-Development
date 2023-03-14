@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 10em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flex_container{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    padding: 1em;
+    margin: 1rem;
+}
+
+.border{
+    border: 3px solid yellow;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55vh;
+    width: 100%;
+    padding: 1em;
+    margin: 0 .2rem;
+}
+
+.child1{
+    height: 5.5vh;
+    width: 75%;
+    align-self:center ;
+}
+
+.child2{
+  height: 40vh;
+  width: 100%;
+  padding: 1em 2em;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Poppins', sans-serif;
+
+    --clr-light-100: white;
+    --clr-light-600: rgba(255, 255, 255, 0.3);
+    --clr-dark-100: gray;
+    --clr-dark-900: black;
+
+    --clr-primary-100: lightblue;
+    --clr-primary-opacity: rgba(173, 216, 230, 0.781);
+    --clr-primary-500: #60b4f5bd;
+
+    --fw-light: 300;
+    --fw-semi-bold: 600;
+    --fw-bold: 900;
+
+    --border-rad1: 10px;
+
+    --border1: 2px solid rgba(0, 0, 0, 0.082);
+
+    --transition-1: 300ms ease-in-out;
+    --transition-2: 300ms ease-in-out 100ms;
+
+    --shadow-1: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --shadow-2: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    --monochrome-shadow: 0 2px 7px rgba(255, 255, 255, 0.4);
+
+    --linear-gradient-direction: to top left;
+    --primary-gradient-background: linear-gradient(var(--linear-gradient-direction), var(--clr-primary-100), var(--clr-primary-500));
+}
+
+/* Applying a linear gradient to the "body" causes repetition in the background image, in mobile devices. So I applied the same styling to "html" (after making a few Google searches). */
+html {
+    background-image: var(--primary-gradient-background);
+    background-attachment: fixed;
+}
+
+body {
+    padding: 1em;
+
+    font-family: var(--ff-primary);
+    color: var(--clr-dark-900);
+    font-weight: var(--fw-semi-bold);
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/* p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+} */
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    /* outline: none; */
+    background: none;
+    line-height: 1;
+    font-family: inherit;
+
+    padding: 1.5em 3em;
+    cursor: pointer;
+
+    transition: all var(--transition-1);
+    border-radius: 3px;
+    user-select: none;
+}
+
+.btn:active {
+    transform: translateY(5px);
+    box-shadow: var(--shadow-2);
+}
+
+.input {
+    padding: .5em;
+
+    border: none;
+    outline: none;
+    border-radius: var(--border-rad1);
+
+    text-align: center;
+    background-color: var(--clr-light-600);
+    transition: all var(--transition-1);
+}
+
+.input:focus {
+    outline: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+input::placeholder {
+    color: var(--clr-dark-100);
+}

@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(170, 166, 157);
+}
+
+/* Utility classes: */
+.btn {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.position_right {
+    float: right;
+}
+
+.position_left {
+    float: left;
+}
+
+/* Component classes: */
+
+.first_color {
+    background-color: rgb(173, 255, 47);
+}
+
+.second_color {
+    background-color: rgb(248, 239, 186);
+}
+
+.third_color {
+    background-color: rgb(0, 255, 0);
+}
+
+.fourth_color {
+    background-color: rgb(209, 216, 224);
+}
+
+.buttons_container {
+    border: 5px solid red;
+    background-color: rgb(140, 149, 177);
+    height: 60px;
+}
+
+.box_container {
+    color: rgb(163, 156, 250);
+    width: 2300px;
+}
+
+.box {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+}
+
+.box-2 {
+    color: black;
+    height: 350px;
+}

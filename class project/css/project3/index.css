@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(49, 72, 133);
+    background-image: url(img/body-bg.png);
+    background-size: contain;
+
+}
+
+/* Resets: */
+a {
+    text-decoration: none;
+}
+
+
+/* Utility classes: */
+
+.btn {
+    padding: .5em 1em;
+}
+
+.underline {
+    text-decoration: 4px underline;
+}
+
+.text_center {
+    text-align: center;
+}
+
+
+/* Component classes: */
+
+.tickets_booking_title {
+    margin: 1rem 0;
+}
+
+.tickets {
+    color: lime;
+}
+
+.parent_container {
+    background-color: rgb(65, 63, 79);
+    background-image: url(img/oriental-tiles.png);
+
+    display: flex;
+    padding: 3em 5em;
+}
+
+.large_content {
+    padding: 1em;
+    width: 60%;
+    line-height: 1.7;
+}
+
+.large_content>* {
+    margin-bottom: 1rem;
+}
+
+.slider_container {
+    width: 40%;
+    height: 24rem;
+    border: 2px solid white;
+
+    overflow: auto;
+
+    padding: 1em;
+}
+
+.match_search {
+    height: 3rem;
+    padding: .5em 1em;
+    background: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+
+    text-overflow: ellipsis;
+}
+
+.match_search:focus {
+    width: 100%;
+    border: 2px solid white;
+}
+
+.image_title {
+    padding: 3em 0;
+
+    background-color: rgb(25, 136, 155);
+    background-image: url(img/cricket_image.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+
+    margin-top: 1rem;
+}
+
+.btn_book_ticket {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(254, 211, 48);
+    opacity: 0;
+
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.image_title:hover {
+    opacity: .5;
+    font-weight: lighter;
+}
+
+.image_title:hover+.btn_book_ticket {
+    opacity: 1;
+}
+
+.btn_book_ticket:hover {
+    background-color: rgba(254, 211, 48, .8);
+    opacity: 1;
+}
+
+.participants_heading {
+    font-size: x-large;
+}
+
+.participants_section {
+    padding: 1em;
+}
+
+.participants_heading {
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.participants_container {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.participants_container>* {
+    padding: 3.5em;
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.india_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/188px-Flag_of_India.svg.png);
+}
+
+.australia_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/188px-Flag_of_Australia_%28converted%29.svg.png);
+}
+
+.pakistan_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/188px-Flag_of_Pakistan.svg.png);
+}
+
+.england_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/188px-Flag_of_England.svg.png);
+}
+
+.srilanka_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/188px-Flag_of_Sri_Lanka.svg.png);
+}
+
+.westindies_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cricket_West_Indies_Logo_2017.png/225px-Cricket_West_Indies_Logo_2017.png);
+}
+
+.zimbabwe_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/188px-Flag_of_Zimbabwe.svg.png);
+}
+
+.bangladesh_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/188px-Flag_of_Bangladesh.svg.png);
+}
+
+.newzealand_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/188px-Flag_of_New_Zealand.svg.png);
+}
+
+.uae_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/188px-Flag_of_the_United_Arab_Emirates.svg.png);
+}
+
+.nepal_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/120px-Flag_of_Nepal.svg.png);
+}
+
+.afghanistan_cont {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/188px-Flag_of_the_Taliban.svg.png);
+}

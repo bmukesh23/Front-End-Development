@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+/* resets */
+a{
+        text-decoration: none;
+}
+
+/* utility classes */
+.underline{
+    text-decoration: 2px underline yellow;
+}
+
+.center{
+    margin: auto;
+    width: fit-content;
+}
+
+.text_center{
+    text-align: center;
+}
+
+
+.font{
+    font-family: 'Aclonica', sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.monochromatic_styling{
+    background-color: black;
+    color: white;
+    padding: .4em;
+    font-weight: bold;
+}
+
+/* Component classes */
+.navigation{
+    background-color: rgb(249, 122, 122);
+    padding: .5em 0;
+    text-align: end;
+}
+
+.navigation a{
+    color: white;
+}
+
+.navigation a{
+    color: white;
+}
+
+.navigation > ul > li{
+    display: inline-block;
+    margin: 0 2.5rem;
+    font-weight: bold;
+}
+
+.overlay{
+    background-color: rgb(224, 110, 110);
+    width: 49.9%;
+    margin-left: auto;
+    margin-top: -2.2rem;
+    padding: 1.1em;
+}
+
+.box_container > *{
+    display: inline-block;
+    width: 49.8%;
+    padding: 1em 1em 2.5em;
+}
+
+.parent_1{
+   background-color: rgb(206, 32, 41);
+}
+
+.parent_2{
+ background-color:rgb(205, 87, 0) ;
+}
+
+.child{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.space{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(230, 226, 226);
+    padding: 1em;
+}
+
+.large_content{
+    line-height: 1.5;
+    text-align-last: center;
+}

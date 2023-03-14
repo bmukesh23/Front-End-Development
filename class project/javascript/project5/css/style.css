@@ -1,0 +1,110 @@
+.main {
+    display: flex;
+}
+
+.section {
+    height: calc(100vh - 2em);
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2em;
+}
+
+.section-2 {
+    align-items: center;
+    gap: 2rem;
+}
+
+.user_interact_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.input_redeem {
+    width: 15rem;
+    padding: 1em;
+    cursor: default;
+
+    opacity: 0;
+    transition: opacity var(--transition-1), background-color var(--transition-1), outline var(--transition-1);
+}
+
+.btn_restart {
+    box-shadow: var(--shadow-1);
+    background-color: var(--clr-light-100);
+}
+
+.btn_restart:hover {
+    opacity: .92;
+}
+
+.output_container {
+    font-size: 1.2rem;
+}
+
+.output_container>* {
+    margin: 3rem 0;
+}
+
+.output {
+    margin-left: .2rem;
+}
+
+.random_number_container {
+    padding: 1em 2em;
+
+    background-image: linear-gradient(var(--linear-gradient-direction), var(--clr-primary-100), var(--clr-primary-500));
+    color: white;
+
+    font-size: 1.7rem;
+    border: 1.5px solid var(--clr-primary-500);
+    border-radius: var(--border-rad1);
+
+    box-shadow: var(--shadow-1);
+}
+
+.user_numbers_container {
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
+}
+
+.number {
+    height: 4rem;
+    width: 4rem;
+}
+
+.number_styling {
+    user-select: none;
+    border-radius: 50%;
+    background-color: var(--clr-light-600);
+    cursor: pointer;
+    transition: transform var(--transition-1);
+}
+
+/* If you wish to make your UI look exactly like mine, uncomment the below lines. However, cuz the code below uses grid, it's not necessary to understand what's going on.  */
+/* .user_numbers_container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.number {
+    height: min(8vw, 4rem);
+    width: min(8vw, 4rem);
+    justify-self: center;
+}
+
+.number:nth-child(10) {
+    grid-column: 2 / 3;
+    grid-column: 2 / span 1;
+} */
+
+.number:active {
+    transform: translateY(3px);
+}

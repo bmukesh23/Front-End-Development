@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: grey;
+    padding: 10em;
+}
+
+.lamp_light{
+    background-color: rgb(153, 154, 101);
+    height: 22vh;
+    width: 10vw;
+}
+
+.lamp_stick{
+    background-color: rgb(1, 0, 1);
+    margin-left: 4.5rem;
+    height: 15vh;
+    width:1.5vw;
+}
+
+.lamp_base{
+    background-color: rgb(255, 165, 0);
+    height: 5vh;
+    width: 10vw;
+}
+
+.wire{
+    background-color: black;
+    width: 40vw;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 2.9rem;
+}
+
+.switches{
+    border: .5px solid rgb(172, 172, 172);
+    width: 2.5vw;
+    height: 12vh;
+    display: inline-block;
+}
+
+.lamp{
+    display: inline-block;
+    margin-bottom:3rem ;
+}
+
+.switch_container{
+    display:inline-block;
+}
+
+.inner_part{
+    margin: auto;
+    width: fit-content;
+    margin-top: 2.5rem;
+}
+
+.inner_button{
+    background-color:rgb(162, 44, 43);
+    margin: .8rem;
+    height: 1.5vh;
+    width: .7vw;
+}
+
+.switches:hover{
+    border: .5px solid white;
+    cursor: pointer;
+}
+
+.switches:active{
+    opacity:0.7;
+}
+
+.switch_container:active + .wire{
+    background-color: white;
+}
+
+.switch_container:active ~ .lamp > .lamp_light{
+    background-color: yellow;
+}

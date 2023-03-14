@@ -1,0 +1,21 @@
+header{
+    border:3px solid red;
+    background-color: #fff3e5;
+    color: blue;
+}
+
+div{
+    background-color: #adff2f;
+   
+    
+}
+
+span{
+    border: 3px solid red;
+    background-color: #add8e6;
+    color: black;
+}
+
+pre{
+    border: 15px solid yellow ;
+}

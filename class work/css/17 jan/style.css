@@ -1,0 +1,57 @@
+*,
+**::after,
+**::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: grey;
+    padding: 5em;
+}
+
+.check{
+    display: none;
+}
+
+.hamburger_container{
+  display: block;
+  height: 3rem;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.bar{
+    height: .5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: opacity 500ms ease-in-out,
+    transform 500ms ease-in-out;
+}
+
+.bar_1{
+    background-color: green;
+    transform: translateY(-5px);
+}
+ 
+.bar_3{
+  background-color: aqua;
+  transform: translateY(5px);
+}
+
+.bar_1,.bar_3{
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .7);
+}
+
+.check:checked ~ .hamburger_container > .bar_2{
+    opacity: 0;
+}
+
+.check:checked ~ .hamburger_container > .bar_1{
+   transform: translateY(10px) rotate(45deg);
+}
+
+.check:checked ~ .hamburger_container > .bar_3{
+    transform: translateY(-10px) rotate(-45deg);
+}

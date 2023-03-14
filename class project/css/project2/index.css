@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(177, 177, 177);
+    padding: 5em 0;
+}
+
+.front_page{
+   background-color: rgb(128, 128, 128);
+   border: 3px dotted rgb(173, 216, 230);
+   height: 100%;
+   width: 90%;
+   padding: 1.5em;
+}
+
+.book{
+    margin: auto;
+    background-color: rgb(173, 216, 230);
+    height: 15rem;
+    width: 20%;
+    cursor: pointer;
+}
+
+.book_title{
+    color: white;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.cover_image{
+    height: 100%;
+    background-color: white;
+    background-image: url(img/cat-image.jpg);
+    background-position: center;
+    padding: 2em 1em;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;
+    display: none;
+}
+
+.book_content{
+    display: none;
+    margin-top: -10rem;
+    margin-left: 1rem;
+}
+
+.book_content > *{
+    display: inline-block;
+}
+
+.text{
+    background-color: rgb(255, 255, 0);
+    padding: 1em;
+    width: 12rem;
+    margin-left: .5rem;
+    visibility: hidden;
+}
+
+.book:hover > .front_page{
+    margin-left: -90%;
+}
+
+.book:hover > .front_page > .book_title{
+    display: none;
+}
+
+.book:hover > .front_page > .cover_image{
+    display: block;
+}
+
+.book:hover > .book_content{
+    display: block;
+}
+
+.front_page:hover > .cover_image{
+    color: green;
+    background-position: top;
+}
+
+.input:checked + .text{
+    visibility: visible;
+}

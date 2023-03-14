@@ -1,0 +1,27 @@
+*
+**::before,
+**::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 1em;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
