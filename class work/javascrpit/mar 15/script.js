@@ -24,8 +24,6 @@ const restaurant = {
 
 };
 
-console.log(restaurant);
-
 const openingHrsEntries = Object.entries(restaurant.openingHours);
 for (const x of openingHrsEntries) {
   // const weekday = x[0];
