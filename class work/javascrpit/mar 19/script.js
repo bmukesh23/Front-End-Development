@@ -12,13 +12,13 @@ const remoteServer = () => {
     return apiData;
 }
 
-let data = remoteServer();
+// let data = remoteServer();
 
-if(!data){
-    data = {result: 'Data fetching failed'};
-}
+// if(!data){
+//     data = {result: 'Data fetching failed'};
+// }
 
-// console.log(data.result);
+console.log(data.result);
 
-// let data = remoteServer() || {result: 'Data fetching failed'};
-// console.log(data.result);
+let data = remoteServer() || {result: 'Data fetching failed'};
+console.log(data.result);
