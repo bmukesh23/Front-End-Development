@@ -26,9 +26,9 @@ const restaurant = {
 
 };
 
-// const openingHrsEntries = Object.entries(restaurant.openingHours);
-// for (const x of openingHrsEntries) {
-//   const [weekday, { open: openTime, close: closeTime }] = x
+const openingHrsEntries = Object.entries(restaurant.openingHours);
+for (const x of openingHrsEntries) {
+  const [weekday, { open: openTime, close: closeTime }] = x
 
-//   console.log(`The restuarant ${restaurant.name} on ${weekday} ${weekday === 'wed' ? 'nes' : ''}day opens at ${openTime} and closes at ${closeTime}.`)
-// }
+  console.log(`The restuarant ${restaurant.name} on ${weekday} ${weekday === 'wed' ? 'nes' : ''}day opens at ${openTime} and closes at ${closeTime}.`)
+}
