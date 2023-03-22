@@ -9,7 +9,7 @@ makeOneWord(str);
 
 const makeFirstWordUpperCase = str2 => {
     let string = str2.split(' ');
-    string = string[0].toUpperCase() + string.slice(1);
+    string = string[0].toUpperCase() + ' ' + (string.slice(1).join(' '));
     console.log(string);
 }
 
