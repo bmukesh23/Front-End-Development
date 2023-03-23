@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+}
+
+
+
+:root{
+        --ff-primary:'Poppins', sans-serif;
+}
+
+
+body{
+    background-image: url(../img/5-dots.png);
+    background-size: 100rem;
+    color: rgb(255, 255, 255);
+    font-family: var(--ff-primary);
+}
