@@ -4,21 +4,85 @@
     height: 100%;
 }
 
-
 .container{
-    padding: .7em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50%;
+}
+
+.container_styling{
+    padding: 1em;
 }
 
 .overall_score_container{
-    margin-left: 1.5rem;
-    height: 16rem;
-    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 75%;
+    width: 15%;
     text-align: center;
 }
 
 .overall_score_container_styling{
-    background-color: rgb(60, 151, 132);
+    font-weight: var(--fw-s);
+    transition: background-color var(--transition-1);
+    background-color: rgb(52, 177, 150);
+    margin-left: 1.5rem;
     border-radius: 10px;
 }
 
+.overall_score_container_styling *{
+    font-weight: inherit;
+}
 
+.player_score{   
+    font-size: xxx-large;
+}
+
+.cursor_score{
+
+}
+
+.actions_container{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 38.5%;
+    padding: 2em 0 2em 2em;
+}
+
+.ruler_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+.shooter_container{
+    width: 4rem;
+    height: 8rem;
+    position: relative;
+    align-items: flex-end;
+}
+
+.shooter_container_styling {
+    margin-left: 50px;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: transform var(--transition-1);
+}
+
+.pop{
+    height: 100px;
+    width: 100px;
+}
+
+.pop_styling{
+    border-radius: 50%;
+    border: 5px solid green;
+    font-weight: var(--fw-b);
+}
