@@ -41,8 +41,16 @@
     font-size: xxx-large;
 }
 
-.cursor_score{
+.current_score_container{
+  height:75%;
+  width:15%;  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.curr_score{
+    font-size: 4rem;
 }
 
 .actions_container{
@@ -53,36 +61,4 @@
     right: 0;
     top: 38.5%;
     padding: 2em 0 2em 2em;
-}
-
-.ruler_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1000px;
-}
-
-.shooter_container{
-    width: 4rem;
-    height: 8rem;
-    position: relative;
-    align-items: flex-end;
-}
-
-.shooter_container_styling {
-    margin-left: 50px;
-    background-color: aliceblue;
-    cursor: pointer;
-    transition: transform var(--transition-1);
-}
-
-.pop{
-    height: 100px;
-    width: 100px;
-}
-
-.pop_styling{
-    border-radius: 50%;
-    border: 5px solid green;
-    font-weight: var(--fw-b);
 }
