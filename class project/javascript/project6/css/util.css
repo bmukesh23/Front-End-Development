@@ -62,9 +62,7 @@ body{
     cursor: pointer;
     transition: all 0.3s; 
     font-weight: var(--fw-m); 
-    background-color: rgb(240, 248, 255);
     border-radius: 10px;
-    color: rgb(0, 0, 0);
 }
 
 .btn:focus {
