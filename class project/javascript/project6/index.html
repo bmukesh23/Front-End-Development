@@ -7,48 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/util.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media-query.css">
     <script src="./script.js" defer></script>
-    <title>Greed Shot</title>
+    <title>Class version - Greed shot</title>
 </head>
 
 <body>
     <main class="main_container">
-        <section class="container container_styling">
-            <div class="overall_score_container overall_score_container_styling">
-                <h2 class="player">Gamer 1</h2>
-                <span class="player_score" id="overall_score--1">0</span>
+        <section class="container | container_styling">
+            <div class="overall_score_container | overall_score_container_styling player--active" id="player--0">
+                <h2 class="player_label">Gamer 1</h2>
+                <span class="player_score" id="overall_score--0">40</span>
+            </div>
+            <div class="current_score_container">
+                <span class="curr_score" id="current_score--0">10</span>
+                <img src="./img/add-svgrepo-com.svg" class="add_curr_score" id="add_curr_score--0"
+                    alt="add current score">
+            </div>
+        </section>
+        <section class="container | container_styling">
+            <div class="overall_score_container | overall_score_container_styling " id="player--1">
+                <h2 class="player_label">Gamer 2</h2>
+                <span class="player_score" id="overall_score--1">40</span>
             </div>
             <div class="current_score_container">
                 <span class="curr_score" id="current_score--1">10</span>
-                <img>
-            </div>
-        </section>
-        <section class="container container_styling">
-            <div class="overall_score_container overall_score_container_styling">
-                <h2 class="player">Gamer 2</h2>
-                <span class="player_score">0</span>
-            </div>
-            <div class="current_score_container">
-                <span class="curr_score" id="current_score--2">10</span>
-                <img>
+                <img src="./img/add-svgrepo-com.svg" class="add_curr_score isDisabled" id="add_curr_score--1"
+                    alt="add current score">
             </div>
         </section>
         <div class="actions_container">
-            <button class="btn restart_btn">Restart 🔁</button>
+            <button class="btn restart_btn">Restart 🔄</button>
             <div class="ruler_container">
-                <div class="flex_center | pop | pop_styling">10</div>
-                <div class="flex_center | pop | pop_styling">9</div>
-                <div class="flex_center | pop | pop_styling">8</div>
-                <div class="flex_center | pop | pop_styling">7</div>
-                <div class="flex_center | pop | pop_styling">6</div>
-                <div class="flex_center | pop | pop_styling">5</div>
-                <div class="flex_center | pop | pop_styling">4</div>
-                <div class="flex_center | pop | pop_styling">3</div>
-                <div class="flex_center | pop | pop_styling">2</div>
-                <div class="flex_center | pop | pop_styling">1</div>
+                <!-- Semantically, these all should be buttons: -->
+                <div class="flex_center | popup | popup_styling | warning">10</div>
+                <div class="flex_center | popup | popup_styling">9</div>
+                <div class="flex_center | popup | popup_styling">8</div>
+                <div class="flex_center | popup | popup_styling">7</div>
+                <div class="flex_center | popup | popup_styling">6</div>
+                <div class="flex_center | popup | popup_styling | warning">5</div>
+                <div class="flex_center | popup | popup_styling">4</div>
+                <div class="flex_center | popup | popup_styling">3</div>
+                <div class="flex_center | popup | popup_styling">2</div>
+                <div class="flex_center | popup | popup_styling | warning">1</div>
             </div>
-            <div class="shooter_container shooter_container_styling"></div>
+            <div class="shooter_container | shooter_container_styling"></div>
             <div class="laser"></div>
         </div>
     </main>
