@@ -16,6 +16,7 @@
     font-size: medium;
     border: none;
     background-color: rgb(134, 134, 134);
+    font-style: italic;
 } 
 
 .btn_2{
@@ -24,6 +25,7 @@
     font-size: medium;
     border: none;
     background-color: rgb(134, 134, 134);
+    font-style: italic;
 }
 
 .btn_1:hover{

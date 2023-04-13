@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-.body{
+body{
+    background-color: aquamarine;
     background-image: url(../img/background-img.jpg);
 }
 
