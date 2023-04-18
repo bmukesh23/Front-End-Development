@@ -1,0 +1,60 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.border {
+    border: 2px solid rgba(0, 0, 0, .4);
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 2em;
+}
+
+.friend_input {
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.people_container {
+    margin-bottom: 1rem;
+    padding: .5em;
+}
+
+.person {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+
+    margin-bottom: .5rem;
+    padding: 1em;
+}
+
+.buttons_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttons_container > button {
+    padding: .7em 1.5em;
+    cursor: pointer;
+}
