@@ -13,3 +13,10 @@ body{
     justify-content: center;
     align-items: center;
 } 
+
+a{
+    color:black;
+   text-decoration: none;
+ }
+
+ 

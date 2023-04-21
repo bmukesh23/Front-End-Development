@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;1,300&display=swap');
 
 .font{
-    /* color: white; */
+    color: white;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -17,7 +17,11 @@
     border: none;
     background-color: rgb(134, 134, 134);
     font-style: italic;
+    text-align: center;
 } 
+
+.btn_1::placeholder{color: black;}
+.btn_2::placeholder{color: black;}
 
 .btn_2{
     padding: .5em 2.5em;
@@ -26,6 +30,7 @@
     border: none;
     background-color: rgb(134, 134, 134);
     font-style: italic;
+    text-align: center;
 }
 
 .btn_1:hover{
@@ -38,4 +43,8 @@
 
 .login_site:hover{
     cursor: pointer;
+}
+
+.header_container{
+    text-align: center;
 }
