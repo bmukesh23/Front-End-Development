@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Async JS with TMDB API</title>
+</head>
+<body class="flex_center">
+    <div class="app_container | app_container_styling">
+        <div class="movie_data_container | container_hidden">
+            <div class="movie_poster_container | movie_poster_container_styling" data-title="Avatar: The Way of Water">
+            </div>
+            <div class="movie_information_container | movie_information_container_styling">
+                <p class="movie_overview">Set more than a decade after the events of the first film, learn the story of
+                    the Sully family (Jake,
+                    Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other
+                    safe, the battles they fight to stay alive, and the tragedies they endure.</p>
+                <div class="movie_extras_information_container">
+                    <span class="bold_content">Release date :</span>
+                    <span id="release_date">2022-12-14</span>
+                    <span class="bold_content"> Lead cast :</span>
+
+                    <!-- Cuz the below data is a noun, we wrap them within "em" -->
+                    <em id="lead_cast">Sam Worthington, Zoe Saldaña</em>
+                    <p class="bold_content">More movies from the cast :</p>
+                    <div class="more_movies_cont">
+                        <em id="more_movies--1">Movie from the cast</em>
+                        <em id="more_movies--2">Movie from the cast</em>
+                    </div>
+                </div>
+                <!-- <button class="btn | fetch_more_button">More from the cast</button> -->
+            </div>
+        </div>
+        <div class="error_container | error_container_styling | container_hidden">
+            <div class="error_signs">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3"></div>
+            </div>
+            <div class="rolling_animation_container">
+                <div class="face face_styling">
+                    <div class="eye eye-1"></div>
+                    <div class="eye eye-2"></div>
+                </div>
+                <div class="shadow | shadow_styling"></div>
+            </div>
+            <h3 class="error_heading">ERROR!</h3>
+            <p class="error_message">OH NO, SOMETHING WENT WRONG.</p>
+            <button class="btn | try_again_btn">Try again</button>
+        </div>
+        <button class="btn | trending_button | trending_button_styling" id="trending_button--display">Display</button>
+        <button class="btn | trending_button | trending_button_styling" id="trending_button--coordinates">Provide
+            coordinates</button>
+    </div>
+</body>
+</html>
