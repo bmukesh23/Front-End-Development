@@ -1,0 +1,55 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10em;
+}
+
+.geolocation_data_container{
+    background-color:white;
+    padding: 1em;
+    margin-bottom: 1rem;
+    border-radius: .5em;
+    width: 11.5em;
+    text-align: center;
+}
+
+.container_hidden{
+    visibility: hidden;
+}
+
+.app_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 3em;
+    background-color:black;
+    border-radius: 1em;
+}
+
+.lat_bar{
+    border: none;
+    padding: .5em;
+    margin-bottom: .5rem;
+    border-radius: .3em;
+}
+
+.long_bar{
+    border: none;
+    padding: .5em;
+    border-radius: .3em;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: .5em;
+    border: none;
+    border-radius: .5em;
+}
